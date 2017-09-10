@@ -1,0 +1,20 @@
+
+
+ <?php
+
+ 
+require_once('dbh.php');
+if(isset($id)){}
+	$id=filter_input(INPUT_GET, 'id',
+	FILTER_VALIDATE_INT);
+	if ($id==NULL||$id ==FALSE){
+		$id=1;
+	}
+ ?>
+
+<?php foreach ($id as $id) : ?>
+	<li> <a href=".?id=<?Php echo $id['id']; ?>">
+
+	</a>
+</li>
+<?Php endforereach; ?>

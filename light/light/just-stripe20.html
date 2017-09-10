@@ -1,0 +1,156 @@
+
+
+<?php 
+require_once('./stripe-config.php'); 
+header('Access-Control-Allow-Origin: *');
+
+?>
+
+<!DOCTYPE html>
+<!-- Google Webfont -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700|Unica+One' rel='stylesheet' type='text/css'>
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Icomoon Icons -->
+	<link rel="stylesheet" href="css/icomoon-icons.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Easy Responsive Tabs -->
+	<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+<div 
+
+		 <title> <center> <h1 class="fh5co-title"<center>Please Pay with Card Below <center> </h1>
+		 	<br></title> <center>Thank you in advance for your Donation! </title> 
+		 </center>
+</div>
+<!-- $20 PAYMENT FORM>--> 
+<!-- Main Nav -->
+<div id="fh5co-logo" class="text-center">
+	<a class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+			<div id="fh5co-main-nav">
+			<nav id="fh5co-nav" role="navigation">
+				<ul>
+					
+						<center> <center><a href="index.html">Back to Homepage</a>
+					</br>
+					
+						<a href="inside-page.html">Platform</a>
+					<br>
+						<a href="contribute.html">Contribute</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+	<br>
+	<BR>
+	
+<form action="stripe-charge20.php"method="post">
+  <script src="https://checkout.stripe.com/checkout.js"  class="stripe-button" 
+    data-key="pk_live_g1XasmRmPOxQu6qVmy3MXErz"
+    data-amount="2000"
+    data-name="Committee to elect Carol Fey "
+    data-description="campaign donation"
+     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"></script>
+
+</center>
+</form>
+
+
+
+<!-- Footer -->
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row" id="fh5co-logo" class="text-center">
+					<center>
+					<div class="col-md-3 col-xs-12 fh5co-footer-widget ">
+						<img src="images/2logo.png" alt="Image" class="img-responsive"> </center>
+					</div>
+					 <!-- 
+					<div class="col-md-2 col-xs-6 fh5co-footer-widget">
+						<ul>
+							<li><a href="#">Our Campaign Team</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>-->
+
+					 <!-- Footer Sign Up-->
+				
+					
+				<div class="fh5co-spacer fh5co-spacer-md"></div>
+				<div class="row">
+					<div class="col-md-6">
+						<p class="fh5co-copyright">&copy; Committee to elect Carol Fey 2017. All Rights Reserved. <br>Powered by: Cloud Stitch Productions<a href="
+
+							
+							http://CloudStitchProductions.com." target="_blank">CloudStitchProductions</a> 
+					
+					</div>
+					<!-- Cloud Stitch Footer-->
+							
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-xs-12 fh5co-footer-widget ">
+						<img src="images/cloudstitch logo3.png" alt="Image" class="img-responsive">
+					</div>
+					<div class="col-md-6">
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-pinterest"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+		
+		<!-- Go To Top -->
+		<a href="#" class="fh5co-gotop"><i class="ti-shift-left"></i></a>
+		
+			
+		<!-- jQuery -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Easy Responsive Tabs -->
+		<script src="js/easyResponsiveTabs.js"></script>
+		<!-- FastClick for Mobile/Tablets -->
+		<script src="js/fastclick.js"></script>
+		<!-- Velocity -->
+		<script src="js/velocity.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+
+
+	</body>
+</html>
